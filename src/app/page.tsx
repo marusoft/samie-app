@@ -1,7 +1,9 @@
+import { SplashScreen } from "@/components/layouts";
+
 export default function Home() {
   return (
     <div>
-      <h1>Hello Samie.</h1>
+      <SplashScreen/>
     </div>
   );
 }

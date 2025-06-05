@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bgImage {
+  z-index: 1;
+  filter: brightness(40%);
+}
+
+.overlay {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.title {
+  /* font-size: 3rem;
+  font-weight: 700;
+  margin: 0; */
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+/* loader animation */
+/* Container fade-out */
+.fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+
+/* Dot Loader */
+.loader {
+  display: flex;
+  gap: 8px;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--dot-color);
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 1;
+  }
+}
