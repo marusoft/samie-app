@@ -1,7 +1,17 @@
+import {
+  FeatureCards,
+  HeroSection,
+  HowItWorks,
+  Navbar,
+} from "@/components/layouts";
+
 const LandingPage = () => {
   return (
     <section>
-      <h1>Landing Page</h1>
+      <Navbar />
+      <HeroSection />
+      <FeatureCards />
+      <HowItWorks />
     </section>
   );
 };

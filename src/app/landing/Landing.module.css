@@ -1,0 +1,87 @@
+/* .hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.left {
+  flex: 1;
+  max-width: 500px;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subtext {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background-color: #f97316;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #ea580c;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  max-width: 100%;
+  height: auto;
+} */
+
+/* Features */
+/* .features {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  text-align: center;
+  max-width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+}
+
+.featureCard h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+.featureCard p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+} */

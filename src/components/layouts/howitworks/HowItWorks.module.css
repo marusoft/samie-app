@@ -1,0 +1,99 @@
+.section {
+  padding: 4rem 0;
+  /* background-color: #f8f9fa;  */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  /* color: #333; */
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem;
+  /* background-color: #ffffff; */
+  border-radius: 12px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+}
+
+.stepNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 542;
+  height: 542;
+  /* top: 1207px;
+  left: 169px; */
+
+  background-color: var(--secondary-color); /* Brand color - adjust as needed */
+  /* color: white; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  /* color: #333; */
+}
+
+.stepDescription {
+  /* color: #666; */
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.stepButton {
+  padding: 0.75rem 1.5rem;
+  background-color: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.stepButton:hover {
+  background-color: #3a5bef;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .stepNumber {
+    margin-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}
