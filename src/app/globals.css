@@ -12,6 +12,8 @@
   --accent-color: #2dd4bf;
   --cta-btn: #3b82f6;
   --dot-color: #3b82f6;
+  
+  
 
   /* border-radius */
   --border-radius: 0.5rem;
@@ -56,5 +58,5 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0rem 2rem;
+  padding: 0rem .9rem;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "@/app/globals.css";
 import styles from "./FeatureCard.module.css"
 import Expense from "../../../assets/expense.png";
 import Split from "../../../assets/split.png";
@@ -31,14 +32,24 @@ const features = [
 
 const FeatureCards = () => {
   return (
-    <section className={styles.features}>
-      {features.map((feature, idx) => (
-        <div key={idx} className={styles.featureCard}>
-          <Image src={feature.image} alt={feature.title} width={50} height={45} className={styles.featureImage}  />
-          <h3>{feature.title}</h3>
-          <p>{feature.text}</p>
-        </div>
-      ))}
+    <section className={styles.section}>
+      <section className="container">
+        <section className={styles.features}>
+          {features.map((feature, idx) => (
+            <div key={idx} className={styles.featureCard}>
+              <Image
+                src={feature.image}
+                alt={feature.title}
+                width={50}
+                height={45}
+                className={styles.featureImage}
+              />
+              <h3>{feature.title}</h3>
+              <p>{feature.text}</p>
+            </div>
+          ))}
+        </section>
+      </section>
     </section>
   );
 }
