@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import 'swiper/css';
+import 'swiper/css/pagination';
 import "./globals.css";
-import { Navbar } from "@/components/layouts";
 
 const inter = Inter({
   variable: "--font-inter",

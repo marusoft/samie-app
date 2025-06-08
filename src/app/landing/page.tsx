@@ -1,8 +1,10 @@
 import {
-  FeatureCards,
-  HeroSection,
-  HowItWorks,
   Navbar,
+  HeroSection,
+  FeatureCards,
+  HowItWorks,
+  PerfectFor,
+  Testimonial,
 } from "@/components/layouts";
 
 const LandingPage = () => {
@@ -12,6 +14,8 @@ const LandingPage = () => {
       <HeroSection />
       <FeatureCards />
       <HowItWorks />
+      <PerfectFor />
+      <Testimonial />
     </section>
   );
 };

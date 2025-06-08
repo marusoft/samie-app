@@ -1,0 +1,59 @@
+.section {
+  padding: 6rem 0;
+}
+.perfectFor {
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+.sectionTitle {
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+.sectionSubtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+/* Perfect For Section */
+.useCases {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  background-color: var(--cards-bg);
+  border-radius: 10px;
+  padding: 2rem 2rem 4rem;
+}
+
+.useCase {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.useCaseImage {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.useCase h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.useCase p {
+  font-size: 0.8rem;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+

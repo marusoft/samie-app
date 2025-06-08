@@ -3,10 +3,16 @@ import SplashScreen from "./splashscreen/SplashScreen";
 import FeatureCards from "./featurescard/FeatureCards";
 import HeroSection from "./herosection/HeroSection";
 import HowItWorks from "./howitworks/HowItWorks";
+import PerfectFor from "./perfectfor/PerfectFor";
+import Testimonial from "./testimonial/Testimonial";
 
 
-
-
-
-
-export { Navbar, SplashScreen, FeatureCards, HeroSection, HowItWorks };
+export {
+  Navbar,
+  SplashScreen,
+  FeatureCards,
+  HeroSection,
+  HowItWorks,
+  PerfectFor,
+  Testimonial,
+};

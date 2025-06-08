@@ -10,7 +10,7 @@ import stepImageFour from "../../../assets/notification.png";
 const HowItWorks = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.container}>
+      <div className="container">
         <h2 className={styles.sectionTitle}>How SAMIE Works</h2>
 
         <div className={styles.stepsContainer}>
