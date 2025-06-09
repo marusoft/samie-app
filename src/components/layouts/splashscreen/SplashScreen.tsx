@@ -7,6 +7,7 @@ import styles from "./Splash.module.css";
 
 const SplashScreen = () => {
   const router = useRouter();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {

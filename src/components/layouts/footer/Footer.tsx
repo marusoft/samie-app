@@ -16,11 +16,11 @@ const Footer = () => {
               className={styles.brandImage}
             />
             <p className={styles.brandDescription}>
-              Samie's mission is to be that intuitive platform for effortlessly
-              managing and settling shared expenses, fostering transparency and
-              harmony in social and professional financial interactions, our
-              products helps you to split bills seamlessly and securely. How can
-              we help you today?
+              Samie&apos;s mission is to be that intuitive platform for
+              effortlessly managing and settling shared expenses, fostering
+              transparency and harmony in social and professional financial
+              interactions, our products helps you to split bills seamlessly and
+              securely. How can we help you today?
             </p>
           </div>
 
