@@ -1,0 +1,115 @@
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.testimonials {
+  font-weight: 700;
+  color: var(--text-color);
+  text-align: center;
+}
+.sectionTitle {
+  font-size: 1.875rem;
+  margin-bottom: 3rem;
+}
+
+.swiperContainer {
+  padding: 1rem 0 3rem;
+  width: 100%;
+}
+
+.swiperSlide {
+  height: auto;
+}
+
+.testimonialCard {
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  color: #e0e0e0;
+  transition: transform 0.3s ease;
+}
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
+
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonialImage {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonialInfo {
+  flex: 1;
+}
+
+.userName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 0.25rem 0;
+}
+
+.rating {
+  color: #e89c31;
+  font-size: 1rem;
+}
+
+.testimonialText {
+  color: #000;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Swiper pagination styles */
+.swiperPaginationBullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  opacity: 1;
+  margin: 0 5px !important;
+  cursor: pointer;
+}
+
+/* Enhanced pagination dots */
+.swiperPaginationBullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.3); /* White border */
+}
+
+.swiperPaginationBulletActive {
+  background-color: #ffffff; /* Solid white for active */
+  transform: scale(1.2);
+  border-color: transparent;
+}
+
+/* Optional glow effect for active dot */
+.swiperPaginationBulletActive {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Custom bullet styling */
+.customBullet {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+}

@@ -5,13 +5,18 @@
 }
 :root {
   /* colors */
-  --bg-color: #f9f7ff;
-  --text-color: #171717;
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
   --primary-color: #0f172a;
   --secondary-color: #f1f5f9;
   --accent-color: #2dd4bf;
   --cta-btn: #3b82f6;
   --dot-color: #3b82f6;
+  --cards-bg: #ecebeb;
+  --card-bg: #ffffff;
+  ;
+  
+  
 
   /* border-radius */
   --border-radius: 0.5rem;
@@ -31,7 +36,7 @@
   --heading-2: 0.9rem;
 
   /* body font size */
-  --text-size: 0.9rem
+  --text-size: 0.9rem;
 
   /* max width */
   --max-width: 1300px;
@@ -39,10 +44,9 @@
 
 body {
   color: var(--text-color);
-  background: var(--background);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  background: var(--bg-color);
+  font-family: var(--body-font);
+  font-size: var(--text-size);
 }
 img {
   max-width: 100%;
@@ -57,5 +61,5 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0rem 0.9rem;
+  padding: 0rem .9rem;
 }
