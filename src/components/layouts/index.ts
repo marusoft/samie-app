@@ -5,6 +5,8 @@ import HeroSection from "./herosection/HeroSection";
 import HowItWorks from "./howitworks/HowItWorks";
 import PerfectFor from "./perfectfor/PerfectFor";
 import Testimonial from "./testimonial/Testimonial";
+import Faq from "./faq/Faq";
+import Footer from "./footer/Footer";
 
 
 export {
@@ -15,4 +17,6 @@ export {
   HowItWorks,
   PerfectFor,
   Testimonial,
+  Faq,
+  Footer
 };

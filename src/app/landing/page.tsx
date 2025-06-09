@@ -5,6 +5,8 @@ import {
   HowItWorks,
   PerfectFor,
   Testimonial,
+  Faq,
+  Footer,
 } from "@/components/layouts";
 
 const LandingPage = () => {
@@ -16,6 +18,8 @@ const LandingPage = () => {
       <HowItWorks />
       <PerfectFor />
       <Testimonial />
+      <Faq />
+      <Footer />
     </section>
   );
 };
