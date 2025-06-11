@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./LoginForm.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { EyeClose, EyeOpen } from "@/components/icons";
+import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -35,7 +35,7 @@ const LoginForm = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.subtitle}>Sign in</h2>
+          <h2 className={styles.title}>Sign in</h2>
           <p className={styles.description}>
             Enter your details below to sign into your <br /> account
           </p>
@@ -109,7 +109,7 @@ const LoginForm = () => {
                   Signing in...
                 </>
               ) : (
-                "Sign in"
+                <Link href="/updateprofile">Sign in</Link>
               )}
             </button>
           </form>
