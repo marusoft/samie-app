@@ -31,7 +31,9 @@ const LoginForm = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Image src="/images/logo.png" width={100} height={10} alt="logo" />
+        <Link href="/">
+          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
+        </Link>
       </div>
       <div className={styles.container}>
         <div className={styles.header}>
@@ -91,7 +93,7 @@ const LoginForm = () => {
 
             <div className={styles.forgotPassword}>
               <Link
-                href="/forgot-password"
+                href="/forgotpassword"
                 className={styles.forgotPasswordLink}
               >
                 Forgotten Password?
