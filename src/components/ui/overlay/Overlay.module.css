@@ -1,0 +1,11 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bgImage {
+  z-index: 1;
+  filter: brightness(40%);
+}

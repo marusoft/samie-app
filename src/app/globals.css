@@ -10,11 +10,13 @@
   --primary-color: #0f172a;
   --secondary-color: #f1f5f9;
   --accent-color: #2dd4bf;
-  --cta-btn: #3b82f6;
+  --cta-btn-color: #3b82f6;
   --dot-color: #3b82f6;
+  --btn-hover-color: #1668ec;
   --cards-bg: #ecebeb;
   --card-bg: #ffffff;
-  ;
+  --nav-hover-color:  #FB923C;
+
   
   
 
@@ -61,5 +63,5 @@ a {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0rem .9rem;
+  padding: 0rem 1rem;
 }
