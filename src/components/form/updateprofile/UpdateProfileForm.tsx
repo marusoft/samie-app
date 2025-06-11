@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
-
-import styles from "./UpdateProfile.module.css";
 import Image from "next/image";
+import Link from "next/link";
+import styles from "./UpdateProfile.module.css";
 
 const UpdateProfileForm = () => {
   const [formData, setFormData] = useState({
@@ -46,7 +46,9 @@ const UpdateProfileForm = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Image src="/images/logo.png" width={100} height={10} alt="logo" />
+        <Link href="/">
+          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
+        </Link>
       </div>
       <div className={styles.container}>
         <div className={styles.header}>
@@ -121,7 +123,7 @@ const UpdateProfileForm = () => {
             />
           </div>
           <button type="submit" className={styles.submitButton}>
-            Update Profile
+            <Link href="/dashboard"> Update Profile</Link>
           </button>
         </form>
       </div>

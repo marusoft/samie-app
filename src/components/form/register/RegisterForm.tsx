@@ -67,7 +67,7 @@ const SignUp = () => {
               <div className={styles.header}>
                 <p className={styles.signup}>Sign up</p>
                 <p className={styles.signin}>
-                  <Link href="/auth/login" >Sign in</Link>
+                  <Link href="/auth/login">Sign in</Link>
                 </p>
                 <p className={styles.description}>
                   Enter your details below to create your account
@@ -199,7 +199,7 @@ const SignUp = () => {
                 </div>
 
                 <button type="submit" className={styles.submitButton}>
-                  Sign up
+                  <Link href="/auth/login"> Sign up</Link>
                 </button>
 
                 <p className={styles.terms}>
