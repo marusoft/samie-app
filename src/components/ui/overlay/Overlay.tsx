@@ -1,8 +1,14 @@
 import Image from "next/image";
 import styles from "./Overlay.module.css";
 
+type overlayProps = {
+  children: React.ReactNode;
+  className?: string;
+};
 
-const Overlay = ({ children, className }: any) => {
+
+
+const Overlay = ({ children, className }: overlayProps) => {
   return (
     <div className={styles.wrapper}>
       <Image
