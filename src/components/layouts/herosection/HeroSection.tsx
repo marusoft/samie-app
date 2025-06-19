@@ -1,6 +1,7 @@
 import Image from "next/image";
 import "@/app/globals.css";
 import styles from "./HeroSection.module.css";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -13,18 +14,31 @@ const HeroSection = () => {
               <span className={styles.emphasis}>Effortlessly.</span>
             </h1>
             <div className={styles.ctas}>
-              <button className={styles.primary}>Get Started</button>
+              <button className={styles.primary}>
+                <Link href="/auth/register" >Get Started</Link>
+              </button>
               <button className={styles.secondary}>How it Works</button>
             </div>
           </div>
           <div className={styles.heroRight}>
             <Image
-              src="/images/hero-image.png"
+              src="/images/hero-image-one.png"
               alt="Friends"
-              fill
+              width={600}
+              height={400}
               sizes="(max-width: 768px) 100vw, 33vw"
-              className={styles.heroImage}
+              className={styles.heroImageOne}
             />
+            <div className={styles.heroOther}>
+              <Image
+                src="/images/hero-image-two.png"
+                alt="Friends"
+                width={600}
+                height={400}
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className={styles.heroImageTwo}
+              />
+            </div>
           </div>
         </section>
       </section>
