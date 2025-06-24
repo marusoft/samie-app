@@ -7,9 +7,9 @@ import {
   Testimonial,
   Faq,
   Footer,
-} from "@/components/layouts";
+} from "@/components/layouts/index";
 
-const LandingPage = () => {
+const Homepage = () => {
   return (
     <section>
       <Navbar />
@@ -23,4 +23,4 @@ const LandingPage = () => {
     </section>
   );
 };
-export default LandingPage;
+export default Homepage;

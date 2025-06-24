@@ -1,6 +1,6 @@
-import Image from "next/image";
 import "@/app/globals.css";
 import styles from "./Footer.module.css";
+import { Logo } from "@/components/ui/index";
 
 const Footer = () => {
   return (
@@ -8,13 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className={styles.footerTop}>
           <div className={styles.brandSection}>
-            <Image
-              src="/images/logo.png"
-              width={100}
-              height={10}
-              alt="logo"
-              className={styles.brandImage}
-            />
+            <Logo className={styles.brandImage} />
             <p className={styles.brandDescription}>
               Samie&apos;s mission is to be that intuitive platform for
               effortlessly managing and settling shared expenses, fostering

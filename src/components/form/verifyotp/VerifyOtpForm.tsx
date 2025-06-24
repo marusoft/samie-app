@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "./VerifyOtpForm.module.css";
 import Link from "next/link";
-import Image from "next/image";
+import { Logo } from "@/components/ui";
 
 const VerifyOtpForm = () => {
   // In a real app, you would manage the verification code state here
@@ -29,9 +29,7 @@ const VerifyOtpForm = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
-        </Link>
+       <Logo />
       </div>
       <div className={styles.container}>
         <div className={styles.header}>

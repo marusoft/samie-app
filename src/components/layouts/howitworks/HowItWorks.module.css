@@ -10,26 +10,45 @@
   color: var(--text-color);
 }
 
-.stepsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 0 3rem;
+.carouselContainer {
+  position: relative;
+  padding: 0 4rem;
 }
 
-.step {
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 0;
+}
+
+.swiperSlide {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
   align-items: center;
-  padding: 2rem;
+  height: auto;
+}
+
+.stepCard {
+  /* background: white; */
   border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.stepCard:hover {
+  transform: translateY(-5px);
 }
 
 .stepIconContainer {
   position: relative;
-  width: 500px;
-  height: 500px;
-  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto 1.5rem;
 }
 
 .circleBackground {
@@ -45,12 +64,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* filter: brightness(0) invert(1);  */
-  /* Makes the icon white */
+  max-width: 80%;
+  height: auto;
 }
 
 .stepContent {
+  text-align: center;
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .stepTitle {
@@ -60,10 +82,11 @@
 }
 
 .stepDescription {
-  color: var(--accent-color);
+  color: var(--para-color);
   margin-bottom: 1.5rem;
   line-height: 1.6;
   font-weight: 700;
+  /* text-align: right; */
 }
 
 .stepButton {
@@ -75,25 +98,102 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  margin-top: auto;
+  align-self: center;
 }
 
 .stepButton:hover {
   background-color: var(--accent-color);
 }
 
+/* Navigation buttons */
+.swiperButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.swiperButton:hover {
+  background: var(--secondary-color);
+  color: white;
+}
+
+.swiperButtonPrev {
+  left: 0;
+}
+
+.swiperButtonNext {
+  right: 0;
+}
+
+/* Pagination bullets */
+.swiper-pagination {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background: var(--secondary-color);
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: var(--secondary-color);
+}
+
 /* Responsive adjustments */
-@media (max-width: 768px) {
-  .step {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
+@media (max-width: 1024px) {
   .stepIconContainer {
-    margin-bottom: 1rem;
+    width: 250px;
+    height: 250px;
   }
+}
 
-  .sectionTitle {
-    font-size: 2rem;
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 0 3rem;
+  }
+  
+  .stepIconContainer {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .swiperButton {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carouselContainer {
+    padding: 0 2rem;
+  }
+  
+  .stepCard {
+    padding: 1.5rem;
+  }
+  
+  .stepTitle {
+    font-size: 1.3rem;
+  }
+  
+  .stepDescription {
+    font-size: 0.9rem;
   }
 }

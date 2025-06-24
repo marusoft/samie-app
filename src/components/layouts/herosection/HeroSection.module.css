@@ -1,20 +1,17 @@
-
 .section {
-  padding: 6rem 0;
+  padding: 10rem 0;
 }
 .hero {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
   background-color: #0f172a;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .heroLeft {
-  /* flex: 1; */
-  /* max-width: 60%; */
+  flex: 1;
   font-size: 60px;
-  letter-spacing: 7%;
 }
 
 .heroLeft h1 {
@@ -37,7 +34,7 @@
   background-color: transparent;
   color: white;
   border: 1px solid #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 3rem;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
@@ -47,27 +44,65 @@
   background-color: transparent;
   color: white;
   border: 1px solid #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.9rem 3.5rem;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
 }
 
-.heroRight img {
-  border-radius: 1rem;
-}
-
 .heroRight {
-  /* flex: 1; */
-  position: relative;
-  min-width: 50%;
+  flex: 1;
   aspect-ratio: 4 / 3;
   max-width: 100%;
   border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
-.heroImage {
+.heroImageOne {
   object-fit: cover;
   border-radius: 1rem;
+}
+.heroOther {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  aspect-ratio: 4 / 3;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.heroImageTwo {
+  width: 400px;
+  max-height: 350px;
+  object-fit: contain;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+  }
+  .heroLeft h1{
+    font-size: 2rem;
+    max-width: 100%;
+    text-align: center;
+  }
+  .ctas {
+    justify-content: center;
+    align-items: center;
+  }
+  .primary,
+  .secondary {
+    padding: 0.7rem 2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .heroLeft h1{
+    font-size: 1.2rem;
+  }
+  .ctas{
+  flex-direction: column;
+  }
+  
 }

@@ -1,43 +1,19 @@
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.logo  {
+  padding-top: 1rem;
 }
 .content {
   position: relative;
   z-index: 2;
-  margin-top: 2rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* place-items: center; */
-  gap: 1.3rem;
+  grid-template-columns: 1fr;
+
 }
 
-.title {
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 40px;
-  margin-bottom: 0.8rem;
-}
-.leftContentDetails {
-  margin-top: 18rem;
-  text-align: center;
-}
-.leftContentDetails button {
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 10px;
-  padding: 10px 80px;
-  color: var(--bg-color);
-  background-color: var(--cta-btn-color);
-  font-size: 16px;
-}
 .rightContent {
   background-color: var(--bg-color);
-  padding: 30px;
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .header {
@@ -57,12 +33,12 @@
 }
 .signin {
   text-align: right;
-  color: var(--nav-hover-color);
+  color: var(--nav-link-color);
 }
 .form {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: .8rem;
 }
 
 .inputGroup {
@@ -90,7 +66,13 @@
   border-color: var(--cta-btn-color);
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
-
+.twoInputs {
+  display: flex;
+  gap: 1rem;
+}
+.twoInputs > .inputGroup {
+  flex: 1;
+}
 .passwordContainer {
   position: relative;
 }
@@ -134,7 +116,7 @@
   background-color: var(--bg-color);
 }
 .termsLink {
-  color: var(--nav-hover-color);
+  color: var(--nav-link-color);
   text-decoration: none;
 }
 
@@ -167,9 +149,8 @@
   transition: background-color 0.2s;
 }
 
-.uploadButton:hover {
-  /* background: var(--btn-hover-color); */
-}
+/* .uploadButton:hover {
+} */
 
 .fileInput {
   display: none;
