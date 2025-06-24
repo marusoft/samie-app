@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import styles from "./ForgotPasswordForm.module.css";
 import Link from "next/link";
 import { Logo } from "@/components/ui";

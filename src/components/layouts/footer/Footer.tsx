@@ -1,4 +1,3 @@
-import Image from "next/image";
 import "@/app/globals.css";
 import styles from "./Footer.module.css";
 import { Logo } from "@/components/ui/index";

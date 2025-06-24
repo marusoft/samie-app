@@ -114,9 +114,9 @@ const HowItWorks = () => {
               disableOnInteraction: false,
             }}
             onInit={(swiper) => {
-              // @ts-ignore
+              // @ts-expect-error  third-party lib has incorrect types
               swiper.params.navigation.prevEl = prevRef.current;
-              // @ts-ignore
+              // @ts-expect-error  third-party lib has incorrect types
               swiper.params.navigation.nextEl = nextRef.current;
               swiper.navigation.init();
               swiper.navigation.update();
