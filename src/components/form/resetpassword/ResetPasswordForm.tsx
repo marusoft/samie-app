@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { EyeClose, EyeOpen } from "@/components/icons";
 import styles from "./ResetPasswordForm.module.css";
+import { Logo } from "@/components/ui";
 
 const ResetPasswordForm = () => {
   const [formData, setFormData] = useState({
@@ -32,9 +32,7 @@ const ResetPasswordForm = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
-        </Link>
+       <Logo />
       </div>
       <div className={styles.container}>
         <div className={styles.header}>

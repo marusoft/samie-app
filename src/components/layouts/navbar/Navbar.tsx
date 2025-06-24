@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { VscMenu, VscChromeClose } from "react-icons/vsc";
 import "@/app/globals.css";
-import styles from "./Navbar.module.css";
 import { Logo } from "@/components/ui";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

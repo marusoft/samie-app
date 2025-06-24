@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { EyeClose, EyeOpen } from "@/components/icons";
+import { Background, Logo } from "@/components/ui";
+import "@/app/globals.css";
 import styles from "./LoginForm.module.css";
 
 const LoginForm = () => {
@@ -27,17 +29,29 @@ const LoginForm = () => {
       setIsLoading(false);
     }
   };
-
   return (
-    <>
-      <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
-        </Link>
-      </div>
+    <div>
+      <Background className={styles.loginBgContainer}>
+        <div className={styles.loginBgWrapper}>
+          <Image
+            src="/images/login-bg.png"
+            fill
+            alt="login bg"
+            className={styles.loginBg}
+            priority
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+          />
+        </div>
+        <Logo className={styles.logo} />
+      </Background>
+
       <div className={styles.container}>
         <div className={styles.header}>
-          <h2 className={styles.title}>Sign in</h2>
+          <h2 className={styles.title}>WELCOME BACK!</h2>
           <p className={styles.description}>
             Enter your details below to sign into your <br /> account
           </p>
@@ -115,21 +129,19 @@ const LoginForm = () => {
               )}
             </button>
           </form>
-
-          <div className={styles.divider}>
-            <span className={styles.dividerText}>or</span>
-          </div>
-
-          <Link
-            href="/auth/register"
-            className={styles.signupButton}
-            tabIndex={isLoading ? -1 : 0}
-          >
-            Sign up
-          </Link>
+          <p className={styles.createAccount}>
+            Don’t have an account?{" "}
+            <Link
+              href="/auth/register"
+              className={styles.createAccountLink}
+              tabIndex={isLoading ? -1 : 0}
+            >
+              Sign up
+            </Link>
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 export default LoginForm;

@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./ForgotPasswordForm.module.css";
 import Link from "next/link";
+import { Logo } from "@/components/ui";
 
 const ForgotPasswordForm = () => {
   const [email, setEmail] = useState("");
@@ -28,9 +29,7 @@ const ForgotPasswordForm = () => {
   return (
     <>
       <div className={styles.logo}>
-        <Link href="/">
-          <Image src="/images/logo.png" width={100} height={10} alt="logo" />
-        </Link>
+        <Logo />
       </div>
       <div className={styles.container}>
         <div className={styles.header}>
