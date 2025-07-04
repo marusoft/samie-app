@@ -1,0 +1,40 @@
+.headerContainer {
+  background: #f1f5f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: var(--primary-color);
+}
+.sidebarAndLogo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+/* overlap */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* semi-transparent */
+  z-index: 500; /* lower than nav (1000) but above everything else */
+}
+
+/* overlap */
