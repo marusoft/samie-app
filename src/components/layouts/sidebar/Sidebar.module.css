@@ -1,0 +1,21 @@
+.bars {
+  cursor: pointer;
+}
+.nav {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  position: fixed;
+  top: 70px;
+  left: 100px;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  z-index: 1000;
+}
+.navList {
+  list-style: none;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}

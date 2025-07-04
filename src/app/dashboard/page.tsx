@@ -1,11 +1,10 @@
-import Link from "next/link";
+import { Dashboard } from "@/components/layouts";
 
-const Dashboard = () => {
+const DashboardPage = () => {
   return (
     <div>
-      <h1>hello Dashboard</h1>
-      <Link href="/auth/login" >Logout</Link>
+      <Dashboard />
     </div>
   );
 };
-export default Dashboard;
+export default DashboardPage;

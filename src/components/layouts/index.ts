@@ -7,6 +7,10 @@ import Testimonial from "./testimonial/Testimonial";
 import Faq from "./faq/Faq";
 import Footer from "./footer/Footer";
 import Homepage from "./homepage/Homepage";
+import Dashboard from "./dashboard/Dashboard";
+import Sidebar from "./sidebar/Sidebar";
+import DashboardHeader from "./dashboardheader/DashboardHeader";
+import DashboardFooter from "./dashboardfooter/DashboardFooter";
 
 export {
   Homepage,
@@ -18,4 +22,8 @@ export {
   Testimonial,
   Faq,
   Footer,
+  Dashboard,
+  Sidebar,
+  DashboardHeader,
+  DashboardFooter,
 };

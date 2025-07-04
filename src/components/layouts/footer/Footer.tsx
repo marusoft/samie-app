@@ -1,6 +1,6 @@
 import "@/app/globals.css";
-import styles from "./Footer.module.css";
 import { Logo } from "@/components/ui/index";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
